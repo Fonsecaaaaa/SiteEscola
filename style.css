@@ -19,10 +19,9 @@ body {
 }
 
 .cabecalho {
-    background: #00080e; 
-    color: #f8f8f8; 
-    padding: 1.5rem; 
-    margin-bottom: 2rem;
+    background: #00080e; 
+    color: #f8f8f8; 
+    padding: 1.5rem; 
 }
 
 .navegacao {
@@ -50,6 +49,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     flex-grow: 1; /* Diz para este elemento "crescer" e ocupar o espaço vago */
+    margin-top: 2rem;
 }
 
 .artigo, .sidebar {
@@ -104,10 +104,11 @@ body {
 
 /* DESKTOP (1024px+) */
 @media (min-width: 1024px) {
-    .conteudo-principal {
-        max-width: 1200px;
-        margin: 0 auto; /* Centraliza o conteúdo principal na tela */
-        padding: 1rem 0; /* Remove o padding lateral, já que o max-width cuida disso */
+    .conteudo-principal {
+        max-width: 1200px;
+        /* Mude de "margin: 0 auto;" para "margin: 2rem auto 0;" */
+        margin: 2rem auto 0; /* 2rem(topo) | auto(laterais) | 0(baixo) */
+        padding: 1rem 0;
     }
     
     .menu {
@@ -115,6 +116,7 @@ body {
     }
 
 }
+
 
 
 
