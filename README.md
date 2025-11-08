@@ -44,7 +44,7 @@ Este projeto foi desenvolvido por:
 * Mauro Braga
 
 Este site foi desenvolvido por:
-*Lucas Fonseca
-*Leonardo Trigo
-*Luiz Fernando
-*Lucas Lugão
+* Lucas Fonseca
+* Leonardo Trigo
+* Luiz Fernando
+* Lucas Lugão
