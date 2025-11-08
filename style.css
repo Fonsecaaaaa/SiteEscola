@@ -19,9 +19,9 @@ body {
 }
 
 .cabecalho {
-    background: #00080e; 
-    color: #f8f8f8; 
-    padding: 1.5rem; 
+    background: #00080e;
+    color: #f8f8f8;
+    padding: 1.5rem;
 }
 
 .navegacao {
@@ -63,6 +63,7 @@ body {
 .artigo h1,
 .artigo h2,
 .artigo p,
+.artigo .subtitulo,
 .sidebar h2,
 .sidebar p {
     margin-bottom: 1rem; /* Adiciona espaço abaixo dos títulos e parágrafos */
@@ -104,11 +105,11 @@ body {
 
 /* DESKTOP (1024px+) */
 @media (min-width: 1024px) {
-    .conteudo-principal {
-        max-width: 1200px;
+    .conteudo-principal {
+        max-width: 1200px;
         /* Mude de "margin: 0 auto;" para "margin: 2rem auto 0;" */
-        margin: 2rem auto 0; /* 2rem(topo) | auto(laterais) | 0(baixo) */
-        padding: 1rem 0;
+        margin: 2rem auto 0; /* 2rem(topo) | auto(laterais) | 0(baixo) */
+        padding: 1rem 0;
     }
     
     .menu {
@@ -116,8 +117,3 @@ body {
     }
 
 }
-
-
-
-
-
