@@ -73,7 +73,6 @@ body {
     color: #f8f8f8;
     text-align: center;
     padding: 1.5rem;
-    margin-top: 2rem; /* Empurra o rodapé para baixo */
 }
 
 
@@ -115,4 +114,5 @@ body {
     }
 
 }
+
 
