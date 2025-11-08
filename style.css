@@ -113,3 +113,19 @@ body {
         flex: 1;
     }
 }
+
+/* DESKTOP (1024px+) */
+@media (min-width: 1024px) {
+    .conteudo-principal {
+        max-width: 1200px;
+        /* Mude de "margin: 0 auto;" para "margin: 2rem auto 0;" */
+        margin: 2rem auto 0; /* 2rem(topo) | auto(laterais) | 0(baixo) */
+        padding: 1rem 0;
+    }
+    
+    .menu {
+        gap: 2rem;
+    }
+
+}
+
