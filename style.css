@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Símbolo de comentário para CSS */
+/* MOBILE FIRST - Estilos base para mobile */
 * {
     margin: 0;
     padding: 0;
@@ -8,107 +10,93 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    text-rendering: optimizeLegibility; /* Melhora a legibilidade do texto */
+    background-color: #f8f8f8; /* Fundo claro padrão */
+    color: #333; /* Cor de texto escura para legibilidade */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* vh = Viewport Height (Altura da Tela) */
 }
 
-/* ---------- HEADER ---------- */
 .cabecalho {
-    background: #00172b;
+    background: #00080e;
     color: #f8f8f8;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 1.5rem;
 }
 
 .navegacao {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .menu {
-    list-style: none;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
 }
 
 .menu a {
     color: #f8f8f8;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    padding: 0.5rem;
 }
 
-.menu a:hover {
-    color: #00b4ff;
-}
-
-/* ---------- CONTEÚDO ---------- */
 .conteudo-principal {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    flex-grow: 1;
-    padding: 2rem;
+    flex-grow: 1; /* Diz para este elemento "crescer" e ocupar o espaço vago */
+    margin-top: 2rem;
 }
 
 .artigo, .sidebar {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #b5b3b1;
+    border-radius: 7px;
+    background-color: #fff; /* Adiciona um fundo branco aos cards */
 }
 
-.artigo h1 {
-    color: #00172b;
-    margin-bottom: 1rem;
-}
-
-.artigo h4 {
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
+/* --- Espaçamento do Conteúdo (Substituindo os <br>) --- */
+.artigo h1,
+.artigo h2,
 .artigo p,
+.sidebar h2,
 .sidebar p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+    margin-bottom: 1rem; /* Adiciona espaço abaixo dos títulos e parágrafos */
 }
 
-/* ---------- RODAPÉ ---------- */
+/* --- Rodapé --- */
 .rodape {
-    background: #00172b;
+    background: #00080e;
     color: #f8f8f8;
     text-align: center;
     padding: 1.5rem;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
+
+/* TABLET (768px+) */
 @media (min-width: 768px) {
+    .navegacao {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu {
+        flex-direction: row;
+    }
+    
     .conteudo-principal {
         flex-direction: row;
-        max-width: 1200px;
-        margin: 2rem auto;
     }
-
+    
     .artigo {
         flex: 2;
     }
-
+    
     .sidebar {
         flex: 1;
     }
@@ -128,4 +116,9 @@ body {
     }
 
 }
+
+
+
+
+
 
